@@ -16,6 +16,7 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 }
 
 app.use(express.json());
+app.use(cors())
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(fileUpload({
@@ -40,6 +41,8 @@ app.use("/api/v1", payment);
 // app.get("*", (req,res)=>{
 //     res.sendFile(path.resolve(__dirname,"../frontend/build/index.html"))
 // })
+
+
 
 // Middleware for Errors
 app.use(errorMiddleware);
