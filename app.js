@@ -16,7 +16,11 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 }
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+    origin: ["https://ecommerce-client-brown.vercel.app/"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}))
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(fileUpload({
