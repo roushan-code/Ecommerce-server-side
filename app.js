@@ -18,7 +18,7 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 app.use(express.json());
 app.use(cors({
-    origin: ["https://ecommerce-frontend-hnwr.vercel.app/"],
+    origin: ["https://vite-commerce-five.vercel.app/"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
