@@ -3,8 +3,5 @@
 "name": "Ecommerce",
 "builds": [{"src": "server.js", "use": "@vercel/node" }],
 "routes": [{"src": "/(.*)", "dest": "/server.js" }],
-"rewrites": [
-    { "source": "/api/:path(.*)", "destination": "https://ecommerce-server-side-sigma.vercel.app/:path" },
-    { "source": "/(.*)", "destination": "/index.html" }
-]
+
 }
