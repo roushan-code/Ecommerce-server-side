@@ -18,7 +18,7 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 // let's tackle cors
 const corsOptions ={
-    origin:'*', 
+    origin:'http://localhost:5173', 
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
