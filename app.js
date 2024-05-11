@@ -20,7 +20,7 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 app.use(cors(
     {
-        origin: 'https://vite-commerce-ecfj.vercel.app/',
+        origin: 'https://vite-commerce-eta.vercel.app',
         credentials: true,
     }
 ));
