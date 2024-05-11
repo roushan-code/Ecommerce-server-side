@@ -20,7 +20,7 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 app.use(cors(
     {
-        origin: 'http://localhost:5173',
+        origin: 'https://vite-commerce-eta.vercel.app',
         credentials: true,
     }
 ));
