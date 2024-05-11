@@ -12,6 +12,7 @@ const sendToken = (user, statusCode, res) => {
         ),
         secure: true,
         httpOnly: true,
+        sameSite: 'none'
     };
     // console.log(options);
 

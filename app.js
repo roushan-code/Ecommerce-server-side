@@ -16,16 +16,14 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
     require("dotenv").config({ path: "config/config.env" });
 }
 
-// let's tackle cors
-const corsOptions ={
-    origin:'http://localhost:5173', 
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200,
-}
 
 
-app.use(cors(corsOptions));
+app.use(cors(
+    {
+        origin: 'http://localhost:5173',
+        credentials: true,
+    }
+));
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }))
