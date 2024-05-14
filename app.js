@@ -18,21 +18,21 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 
 // for development
-// app.use(cors(
-//     {
-        // origin: 'https://vite-commerce.onrender.com',
-//         credentials: true,
-//     }
-// ));
-
-
-// for production
 app.use(cors(
     {
-        origin: 'https://main.d32pbus1ra7f7m.amplifyapp.com',
+        origin: 'https://vite-commerce.onrender.com',
         credentials: true,
     }
 ));
+
+
+// for production
+// app.use(cors(
+//     {
+//         origin: 'https://main.d32pbus1ra7f7m.amplifyapp.com',
+//         credentials: true,
+//     }
+// ));
 
 app.use(express.json());
 app.use(cookieParser());
