@@ -18,21 +18,21 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 
 // for development
-// app.use(cors(
-//     {
-//         origin: 'http://localhost:5173',
-//         credentials: true,
-//     }
-// ));
-
-
-// for production
 app.use(cors(
     {
-        origin: 'https://vite-commerce.onrender.com',
+        origin: 'https://vite-commerce-eta.vercel.app',
         credentials: true,
     }
 ));
+
+
+// // for production
+// app.use(cors(
+//     {
+//         origin: 'https://vite-commerce.onrender.com',
+//         credentials: true,
+//     }
+// ));
 
 app.use(express.json());
 app.use(cookieParser());
