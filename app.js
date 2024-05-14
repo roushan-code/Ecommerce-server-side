@@ -20,7 +20,7 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 // for development
 // app.use(cors(
 //     {
-        // origin: 'https://vite-commerce-eta.vercel.app',
+        // origin: 'https://vite-commerce.onrender.com',
 //         credentials: true,
 //     }
 // ));
@@ -29,7 +29,7 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 // for production
 app.use(cors(
     {
-        origin: 'https://vite-commerce.onrender.com',
+        origin: 'https://main.d32pbus1ra7f7m.amplifyapp.com',
         credentials: true,
     }
 ));
